@@ -107,7 +107,6 @@ header .wrapper > .col-1-2 > p:nth-child(2) {
 }
 
 
-
 section p {
 	line-height: 1.75em;
 }
@@ -171,7 +170,7 @@ ul {
 
 /*	2.1 - Main             */
 
-h1:hover, h2, nav a:hover {
+h1:hover, h2, nav a:hover, footer p a:hover {
 	color: #0589b2;
 }
 
@@ -319,29 +318,87 @@ footer {
 
 @media screen and (max-width: 480px) {
 	
-	* {
-		text-align: center;
-	}
+	/* Colors */
 	
-	.gallery-cell {
-		height: 250px;
-	}
-	
-	footer a:hover {
+	nav .col-1-3 a:hover, footer nav {
 		color: #331b4b;
 	}
 	
-	footer nav {
+	nav .col-1-3, footer nav {
 		background-color: #0589b2;
+		margin-bottom: 0;
 	}
 	
-	.row > .col-1-2, .wrapper > .col-1-2, .col-1-3, .col-2-3, .col-1-4 {
+	/* Structure */
+	
+	.row > .col-1-2, .wrapper > .col-1-2, footer .col-1-3, header .col-1-3, .col-2-3, .col-1-4, .col-1-8, #about .wrapper > div:first-child {
 		width: 100%;
 		padding-right: 0;
 	}
 	
+	#about .col-1-3 {
+		width: 50%;
+		float: none;
+		margin: 0 auto;
+	}
+	
+	#about .row .col-2-3 {
+		margin: 0 0 3em;
+	}
+	
+	body > section {
+		padding-bottom: 1em;
+	}
+	
+	footer nav {
+		padding: 1em 0;
+	}
+	
+	#work section header {
+		margin-top: 1.5em;
+	}
+	
+	#work h3{
+		padding-bottom: .25em;
+	}
+	
+	#work section {
+		margin-bottom: 3em;
+	}
+	
 	.wrapper {
 		width: 90%;
+	}
+	
+	.gallery-cell {
+		height: 300px;
+	}
+	
+	/* Typography  */
+	
+	* {
+		text-align: center;
+	}
+	
+	h1 {
+		margin-bottom: 0;
+	} 
+	
+	h2 {
+		font-size: 1.75em;
+	}
+	
+	header .wrapper > .col-1-2 > p:first-child {
+		font-size: 2em;
+		margin-top: 15%;
+	}
+	
+	.gallery-cell .wrapper > .col-1-2 p:nth-child(2) {
+		font-size: 1.25em;
+	}
+	
+	#work section p {
+		font-size: 1.2em;
 	}
 	
 }
@@ -355,6 +412,8 @@ footer {
 	}
 	
 }
+
+
 
 @media screen and (max-width: 768px) {
 	
